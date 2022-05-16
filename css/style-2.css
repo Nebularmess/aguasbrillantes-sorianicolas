@@ -6,6 +6,13 @@
 .fixed {
     position: fixed;
     z-index: 100;
+    height: 70px;
+}
+.row__main {
+    min-height: 400px;
+}
+.row__footer {
+    height: 70px;
 }
 .header {
     background-color: #0F6300 ;
