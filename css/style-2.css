@@ -8,9 +8,6 @@
     z-index: 100;
     height: 70px;
 }
-.row__main {
-    min-height: 400px;
-}
 .row__footer {
     height: 70px;
 }
@@ -23,8 +20,21 @@
     align-items: center;
     padding: 0;
 }
+.header-unite {
+    background-color: #0F6300 ;
+    height: 70px;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    --bs-gutter-x: 0rem;
+}
+
 .fondo {
-    padding: 0px
+    padding: 0px;
+    display: flex;
+    align-items: center;
 }
 .header__open {
     display: none
@@ -32,7 +42,19 @@
 .header__container {
     height: 100%;
 }
-
+.main__row {
+    margin: 0px;
+    min-height: 100vh;
+    background-color: #004503;
+}
+.main__row-unite {
+    margin: 0px;
+    background-color: #004503;
+    
+}
+.bs {
+    --bs-gutter-x: 0;
+}
 .header__proyecto {
     font-family: 'Abril Fatface', cursive;
     font-style: italic;
@@ -60,6 +82,9 @@
     padding: 0px;
 }
 .header__row {
+    height: 60px;
+}
+.header__row-unite {
     height: 60px;
 }
 .nav {
@@ -94,7 +119,7 @@
     height: 70px;
     background-color: #CFD300;
     display: flex;
-    transition: 0,05s;
+    transition: 0.05s;
 }
 .nav__item-volver {
     display: none;
@@ -120,17 +145,29 @@
 }
 .body {
     background-color: #0F1C0D;
+    padding: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .article {
     background-color: #004503;
     position: absolute;
     top: 70px;
+    min-height: 100%;
+}
+.altura {
+    min-height: 100%;
+}
+.section__derecha {
+    min-height: 100%;
 }
 .section__izquierda {
     background-color: #004503;
     display: flex;
     flex-direction: column;
-    min-height: 400px;
+    min-height: 100%;
     justify-content: space-between;
     position: relative;
 }
@@ -184,6 +221,7 @@ ul {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 10px;
 }
 .section__titulo-derecha {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -212,13 +250,17 @@ ul {
 .formulario {
     background-image: linear-gradient(to left, #ada73e4a, #ada73e4a);
     border: 1px solid #ada73e;
-    margin: 15px 20px 15px 20px;
+    margin: 15px 20px 0px 20px;
+    padding: 5px;
 }
 .label {
     color:#0F1C0D;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 4px;
+}
+.form-control {
+    height: 40px;
 }
 .input {
     display: flex;
@@ -241,7 +283,7 @@ ul {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #0F1C0D;
     opacity: 100%;
-    font-size: 22px;
+    font-size: 21px;
     text-align: center;
     margin-left: 1rem;
     margin-top: 10px;
@@ -254,6 +296,7 @@ ul {
 }
 .enviar {
     width: 100%;
+    height: 50px;
     margin: 5px 0px 5px 0px;
     background-color: #0F6300;
     color: #CFD300;
@@ -284,13 +327,27 @@ ul {
 .recuadro__imagen:hover {
     transform: scale(1.2);
 }
+.containerFooter {
+    z-index: 100;
+    position: sticky;
+    margin-top: auto;
+}
 .footer {
     background-color: #0F6300;
     height: 70px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.footer-unite {
+    background-color: #0F6300;
+    height: 70px;
+    padding-left: 0px;
+    padding-right: 0px;
     margin: 0px;
 }
 .footer__row {
     height: 70px;
+    margin-top: auto;
 }
 .footer__izquierda {
     display: flex;
@@ -352,4 +409,141 @@ ul {
 .footer__iconos:hover {
         background-color: green;
         color: yellow;
+}
+@media screen and (max-width: 1023px) {
+
+    .header__proyecto {
+        font-family: 'Abril Fatface', cursive;
+        font-style: italic;
+        font-size: 20px;
+        color: #0F1C0D;
+    }
+    .nav__lista {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: center;
+        font-size: 12px;
+        width: 100%;
+        height: 70px;
+        justify-self: flex-start;
+        margin: 0px;
+    }
+    .section__titulo {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: #0F1C0D;
+        opacity: 100%;
+        font-size: 18px;
+        text-align: center;
+        margin: 10px 20px 15px;
+        margin-top: 10px;
+        background-image: linear-gradient(to left, #ada73e4a, #ada73e4a);
+        border: 1px solid #ada73e;
+    }
+    .section__parrafo {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        margin: 15px 20px 15px 20px;
+        text-align: justify;
+        color:#0F1C0D;
+        padding: 10px;
+        background-image: linear-gradient(to left, #ada73e4a, #ada73e4a);
+        border: 1px solid #ada73e;
+    }
+    .section_iconos {
+        object-fit: cover;
+        height: 30px;
+        width: 30px;
+        margin: 10px;
+        align-self: center;
+        opacity: 100%;
+    }
+    .section__titulo-derecha {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: #0F1C0D;
+        opacity: 100%;
+        font-size: 16px;
+        text-align: center;
+        margin: 10px;
+        margin-top: 10px;
+        background-image: linear-gradient(to left, #0d6300d5,#0d6300d5);
+        border: 1px solid #0d6300
+    }
+    .carouselImagenes {
+        height: 200px;
+        object-fit: cover;
+    }
+    .video {
+        width: 90%;
+        height: 180px;
+        border: solid 1px #0F6300;
+        margin-bottom: 10px;
+    }
+    .footer__proyecto {
+        font-family: 'Abril Fatface', cursive;
+        font-style: italic;
+        font-size: 20px;
+        color: #0F1C0D;
+    }
+    .label {
+        font-size: 16px;
+    }
+    .recuadro__imagen {
+        height: 170px;
+        width: 100%;
+        object-fit: cover;
+        border: 2px green solid;
+        transition: all 2s;
+        margin: 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .header__proyecto {
+        font-family: 'Abril Fatface', cursive;
+        font-style: italic;
+        font-size: 18px;
+        color: #0F1C0D;
+    }
+    .nav {
+        height: 30px;
+    }
+    .nav__item {
+        height: 30px;
+    }
+    .nav__enlace {
+        height: 30px;
+    }
+    .nav__lista {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: center;
+        font-size: 12px;
+        width: 100%;
+        height: 30px;
+        justify-self: flex-start;
+        margin: 0px;
+    }
+    .article {
+        top: 90px;
+    }
+    .carouselImagenes {
+        height: 200px;
+    }
+    .footer__proyecto {
+        font-size: 20px;
+    }
+    .footer__iconos {
+        font-size: 20px;
+    }
+    .footer_derecha {
+        height: 30px;
+    }
+    .footer__lista {
+        height: 30px;
+    }
 }

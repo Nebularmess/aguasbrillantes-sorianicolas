@@ -13,55 +13,49 @@
     <link rel="stylesheet" href="../css/style-2.css">
 </head>
 <body class="body container-fluid">
-    <div class="row header__row">
-        <div class="container-fluid fixed">
-            <div class="row header__row">
-                <div class="col-md-7 fondo">
-                    <header class="header">
-                        <a class="header__marca" href="../index.html">
-                            <img class="header__logo" src="../images/logochico.png" alt="logo">
-                        </a>
-                        <span class="header__proyecto">PROYECTO AGUAS BRILLANTES</span>
-                        <a href="#lateral" class="header__open">
-                            <span class="jam jam-menu"></span>
-                        </a>
-                    </header>
-                </div>
-                <div class="col-md-5 header__lista">
-                    <nav class="nav" id="lateral">
-                        <ul class="nav__lista header__derecha">
-                            <li class="nav__item">
-                                <a class="nav__enlace" href="sobre-nosotros.html"><span class="nav__paginas">Nosotros</span></a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__enlace" href="unite.html"><span class="nav__paginas">Unite</span></a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__enlace" href="ayudanos.html"><span class="nav__paginas">Ayudanos</span></a>
-                            </li>
-                            <li class="nav__item">
-                                <a class="nav__enlace" href="contactanos.html"><span class="nav__paginas">Contactanos</span></a>
-                            </li>
-                            <li class="nav__item-volver">
-                                <a class="nav__enlace volver" href="#"><span class="jam jam-close"></span></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>  
-            </div>
+    <header class="row fixed header-unite">
+        <div class="col-md-7 fondo">
+            <a class="header__marca" href="../index.html">
+                <img class="header__logo" src="../images/logochico.png" alt="logo">
+            </a>
+            <span class="header__proyecto">PROYECTO AGUAS BRILLANTES</span>
+            <a href="#lateral" class="header__open">
+                <span class="jam jam-menu"></span>
+            </a>
         </div>
-    </div>
-    <main class="row row__main">
+        <div class="col-md-5 header__lista">
+            <nav class="nav" id="lateral">
+                <ul class="nav__lista header__derecha">
+                    <li class="nav__item">
+                        <a class="nav__enlace" href="sobre-nosotros.html"><span class="nav__paginas">Nosotros</span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__enlace" href="unite.html"><span class="nav__paginas">Unite</span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__enlace" href="ayudanos.html"><span class="nav__paginas">Ayudanos</span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__enlace" href="contactanos.html"><span class="nav__paginas">Contactanos</span></a>
+                    </li>
+                    <li class="nav__item-volver">
+                        <a class="nav__enlace volver" href="#"><span class="jam jam-close"></span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>  
+    </header>
+    <main class="row main__row bs">
         <article class="container-fluid article">
-            <div class="row">
-                <section class="col-md-7 section">
+            <div class="row bs">
+                <section class="col-md-7 section-izquierda">
                     <h2 class="section__titulo">Unite a nuestra causa!</h2>
                     <p class="section__parrafo">
                         Siempre estamos en busca de personas con nuestros mismos intereses y objetivos que potencien nuestra labor con su energía y esfuerzo.
                         Si te gustaría unirte a nuestra causa y participar de nuestras actividades, te invitamos a rellenar este formularios, contandonos un poco sobre vos y tus motivaciones!
                         Recorda que unirte conlleva tiempo y compromiso, si no estas dispuesto a mantenerlo, reconsideralo!
                     </p>
-                    <div class="row formulario">
+                    <div class="row bs formulario">
                         <div class="row">
                             <h3 class="col-md-12 section__titulo-form">Rellena este formulario para unirte al equipo de Aguas Brillantes</h3>
                         </div>
@@ -77,7 +71,7 @@
                                         <input class="form-control" type="number" id="edad" name="edad" placeholder="Ingrese su edad">
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row bs">
                                     <div class="col-md-6 form__genero">
                                         <span class="label"><b>Ingrese su genero</b></span>
                                     </div>
@@ -92,13 +86,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row bs">
                                     <div class="col-md-12 form__correo">
                                         <label class="label" for="correo label"><b>Email</b></label>
                                         <input class="form-control input" type="email" id="correo" name="correo" placeholder="Ingrese su correo">
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row bs">
                                     <div class="col-md-12">
                                         <button class="btn btn-success enviar"><b>Enviar</b></button>
                                     </div>
@@ -108,10 +102,10 @@
                     </div>
                 </section>
                 <section class="col-md-5 section__derecha">
-                        <div clas="row">
-                            <h3 class="section__titulo-derecha col-md-12">Recorda que apoyandonos los proteges a ellos y que tu ayuda representa un cambio para sus vidas!</h3>
+                        <div clas="row bs">
+                            <h3 class="section__titulo-derecha">Recorda que apoyandonos los proteges a ellos y que tu ayuda representa un cambio!</h3>
                         </div>
-                        <div class="row">
+                        <div class="row bs">
                             <div class="col-md-6 recuadro">
                                 <img class="recuadro__imagen" src="../images/inicio.jpg" alt="ave">
                             </div>
@@ -119,7 +113,7 @@
                                 <img class="recuadro__imagen" src="../images/carpincho.jpg" alt="carpincho">
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row bs">
                             <div class="col-md-6 recuadro">
                                 <img class="recuadro__imagen" src="../images/yacare.png" alt="yacare">
                             </div>
@@ -132,44 +126,39 @@
             </div>
         </article>
     </main>
-    <div class="footer__row">
-        <div class="container-fluid">
-            <footer class="footer col-md-12">
-                <div class="row">
-                    <div class="footer__izquierda col-md-7">
-                        <a class="footer__marca" href="../index.html">
-                            <img class="footer__logo" src="../images/logochico.png"  alt="logo">
-                        </a>
-                        <span class="footer__proyecto">Siguenos en nuestras redes sociales!</span>
-                    </div>
-                    <div class="footer__derecha col-md-5">
-                        <ul class="footer__lista">
-                            <li class="footer__item">
-                                <a class="footer__enlaces enlaces" href="https://www.facebook.com/">
-                                    <span class="jam jam-facebook footer__iconos"></span>
-                                </a>
-                            </li>
-                            <li class="footer__item">
-                                <a class="footer__enlaces enlaces" href="https://www.instagram.com/">
-                                    <span class="jam jam-instagram footer__iconos"></span>
-                                </a>
-                            </li>
-                                </li>
-                            <li class="footer__item">
-                                <a class="footer__enlaces enlaces" href="https://www.twitter.com/">
-                                    <span class="jam jam-twitter footer__iconos"></span>
-                                </a>
-                            </li>
-                            <li class="footer__item">
-                                <a class="footer__enlaces enlaces" href="https://www.youtube.com/">
-                                    <span class="jam jam-youtube-circle footer__iconos"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </footer>
+    <div class="container-fluid containerFooter">
+    <footer class="footer row">
+        <div class="footer__izquierda col-md-7">
+            <a class="footer__marca" href="../index.html">
+                <img class="footer__logo" src="../images/logochico.png"  alt="logo">
+            </a>
+            <span class="footer__proyecto">Siguenos en nuestras redes sociales!</span>
         </div>
+        <div class="footer__derecha col-md-5">
+            <ul class="footer__lista">
+                <li class="footer__item">
+                    <a class="footer__enlaces enlaces" href="https://www.facebook.com/">
+                        <span class="jam jam-facebook footer__iconos"></span>
+                    </a>
+                </li>
+                <li class="footer__item">  
+                    <a class="footer__enlaces enlaces" href="https://www.instagram.com/">
+                       <span class="jam jam-instagram footer__iconos"></span>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__enlaces enlaces" href="https://www.twitter.com/">
+                        <span class="jam jam-twitter footer__iconos"></span>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__enlaces enlaces" href="https://www.youtube.com/">
+                        <span class="jam jam-youtube-circle footer__iconos"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
