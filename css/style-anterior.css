@@ -1,0 +1,1055 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body {
+    font-family: 'Abril Fatface', cursive;
+    background-image: linear-gradient(300deg, green, yellow);
+}
+.enlaces {
+    color: black;
+}
+.container-md {
+    height: 100%;
+}
+.row {
+    height: 50%;
+    margin: 0px;
+    justify-content: center;
+}
+.parrafoAside {
+    border: red 2px solid;
+    margin: 0px;
+    text-align: justify;
+    padding: 5px;
+}
+p {
+    margin-bottom: 0px;
+}
+.video {
+    align-self: center;
+    height: 180px;
+    width: 280px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    border: yellow 2px solid;
+}
+.label {
+    color: black;
+    font-family: 'Abril Fatface';
+    font-size: 10px;
+}
+.form-control-sm {
+    font-size: 10px;
+    padding: 0px;
+    max-height:50px;
+    border: green solid 2px;
+    color: black;
+    background-color: rgb(255, 255, 123);
+}
+ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+p {
+    color: black;
+}
+h2 {
+    color: black;
+}
+span {
+    color: black;
+}
+.row {
+    --bs-gutter-x: 0px;
+}
+.container-md {
+    padding: 0px;
+}
+.carousel {
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+.carousel-item {
+    height: 100%;
+    width: 100%;
+}
+.d-block{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.li {
+    margin: 0px;
+    color: black;
+}
+.header {
+    background-color: green;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.header__open {
+    display: none;
+}
+.header__menu{
+    display: none;
+}
+.menu {
+    display: none;
+}
+.header__marca {
+    height: 8vh;
+    width: 50px;
+}
+.header__logo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.header__proyecto {
+    font-size: 24px;
+    position: absolute;
+    left: 80px;
+}
+.marco {
+    background-color: yellow;
+    height: 100%;
+    width: 45%;
+}
+.nav {
+    padding: 15px;
+    background-color: yellow;
+    height: 100%;
+    width: 45%;
+}
+.nav__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+}
+.volver {
+    display: none;
+}
+.nav__item {
+    margin-left: 1rem;
+    transition: all 1s;
+    color: black;
+}
+.nav__enlace {
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+    border: solid green 3px;
+    padding: 2px;
+    background-color: yellow;
+    transition: all 0.1s;
+}
+.nav__item:hover {
+    transform: scale(1.03)
+}
+.nav__enlace:hover {
+    background-color: green;
+}
+.header__nav {
+    background-color: yellowgreen;
+    height: 50px;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+}
+.main {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-areas: 
+    "article aside";
+    height: 80vh;
+    width: 100%;
+}
+.main__article {
+    grid-area: article;
+}
+.main__article--a {
+    display: none;
+}
+.section {
+    height: 100%;
+    width: 100%;
+    border: 3px yellow solid;
+}
+.contenido {
+    height: 100%;
+    width: 100%;
+    margin: 5 px;
+    border: 2px green solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contenido-m {
+    display:none;
+}
+.contenido__titulo {
+    border: 2px solid green;
+    margin: 5px 15% 5px 15%;
+    padding: 5px;
+    font-size: 28px;
+    text-align: center;
+}
+.contenido__parrafo {
+    border: 2px solid green;
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: justify;
+}
+.contenido__foto {
+    border: 2px solid green;
+    margin: 5px;
+    height: 150px;
+    width: 300px;
+    align-self: center;
+    object-fit: cover;
+    transition: all 3s;
+}
+.contenido__foto:hover {
+    transform: scale(1.5) translate(80px);
+}
+.contenido__epigrafe {
+    align-self: center;
+    margin: 5px;
+}
+.form {
+    border: 2px solid green;
+    margin: 5px;
+    width: 98.5%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+.form__nombre {
+    width: 98.5%;
+    height: 20%;
+    margin: 6px;
+    border: green 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: 12px;
+
+}
+.form__correo {
+    width: 98.5%;
+    height: 20%;
+    margin: 6px;
+    border: green 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: 12px;
+}
+.form__comentario {
+    width: 98.5%;
+    height: 20%;
+    margin: 6px;
+    border: green 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: 12px;
+}
+.form__edad {
+    width: 98.5%;
+    height: 100%;
+    margin: 6px;
+    border: green 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: 12px;
+}
+.form__genero {
+    width: 98.5%;
+    height: 100%;
+    margin: 6px;
+    border: green 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: 12px;
+}
+.form__nro {
+    width: 98.5%;
+    height: 20%;
+    margin: 6px;
+    border: green 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: 12px;
+}
+.labelEscribenos {
+    margin: 5px;
+    padding: 0px 10px 0px 0px;
+}
+.labelEmail {
+    margin: 5px;
+    padding: 0px 48px 0px 0px;
+}
+.labelEmailu {
+    margin: 5px;
+    padding: 0px 154px 0px 0px;
+}
+.labelNombre {
+    margin: 5px;
+    padding: 0px 27px 0px 0px;
+}
+.labelNombreu {
+    margin: 5px;
+    padding: 0px 67px 0px 0px;
+}
+.labelComentario {
+    margin: 5px;
+    padding-right: 102px;
+}
+.labelGenero {
+    padding-left: 65%;
+}
+.labelNro {
+    margin: 5px;
+    padding: 0px 53px 0px 0px;
+}
+.labelNrou {
+    margin: 5px;
+    padding: 0px 160px 0px 0px;
+}
+
+.input {
+    margin: 0px;
+}
+.enviar {
+    width: 10%;
+    padding: 0px;
+    margin: 5px;
+    border: 1px solid green;
+    height: 20px;
+    font-size: 13px;
+    background-color: rgb(255, 255, 123);
+    color: black;
+}
+.main__aside {
+    grid-area: aside;
+    height: 100%;
+    width: 100%;
+    border: green solid 3px;
+}
+.donaciones-m {
+    display: none;
+}
+.main__aside--a {
+    display:none;
+}
+.donaciones {
+    height: 100%;
+    width: 100%;
+    border: solid yellow 2px;
+    display: grid;
+    grid-template-rows: 13% 87%;
+    grid-template-areas:
+    "titulo"
+    "lista";
+}
+.donaciones__titulo {
+    border: solid green 2px;
+    font-size: 20px;
+    grid-area: titulo;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.card {
+    margin-bottom: 50px;
+    height: 150px;
+    width: 100px;
+    border: black 2px solid
+}
+.card-body {
+    width: 90%;
+    height: 50px;
+}
+.btn-primary {
+    width: 30px;
+    height: 15px;
+    font-size: 8px;
+    padding: 0px;
+}
+.imagenCred {
+    height: 90px;
+    width: 100%;
+    object-fit: cover;
+}
+.card-title {
+    color: black;
+    font-size: 12px;
+}
+.card-text {
+    color: black;
+    font-size: 10px;
+}
+.donaciones__lista {
+    border: green solid 2px;
+    grid-area: lista;
+    border-top: 0px;
+    display: grid;
+    list-style: none;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "cred1 cred2"
+    "cred3 cred4";
+    justify-items: center;
+}
+@keyframes nivel1-2 {
+    0% {
+        top: 100%;
+        opacity: 0%;
+    }
+    100% {
+        top: 0%;
+        opacity: 100%;
+    }
+}
+.donaciones__nivel1 {
+    grid-area: cred1;
+    border: 4px green solid;
+    border-radius: 20px;
+    height: 50%;
+    width: 90%;
+    position: relative;
+    background-color: rgb(158, 247, 140);
+    transition: all 1s;
+    animation-name: nivel1-2;
+    animation-duration: 2s;
+}
+.donaciones__nivel1:hover {
+    transform: scale(1.03);
+    background-color: orange;
+}
+.carnet {
+    height: 70px;
+    width: 70px;
+    border: yellow 3px solid;
+    border-radius: 16px;
+    object-fit: cover;
+    position: absolute;
+    top: 14px;
+    margin-left: 4px;
+}
+.donaciones__descripcion {
+    font-size: 13px;
+    position: absolute;
+    left: 90px;
+    bottom: 15px;
+}
+.donaciones__enlace {
+    padding: 2px;
+    border: green solid 2px;
+    border-radius: 5px;
+    font-size: 10px;
+    position: absolute;
+    margin: 4px;
+    right: 5px;
+    bottom: 5px;
+    background-color: yellow;
+}
+.donaciones__nivel2 {
+    grid-area: cred2;
+    border: 4px green solid;
+    border-radius: 20px;
+    height: 50%;
+    width: 90%;
+    position: relative;
+    background-color: rgb(158, 247, 140);
+    transition: all 1s;
+    animation-name: nivel1-2;
+    animation-duration: 2s;
+}
+.donaciones__nivel2:hover {
+    transform: scale(1.03);
+    background-color: orange;
+}
+.donaciones__nivel3 {
+    grid-area: cred3;
+    border: 4px green solid;
+    border-radius: 20px;
+    height: 50%;
+    width: 90%;
+    position: relative;
+    background-color: rgb(158, 247, 140);
+    transition: all 1s;
+    animation-name: nivel3-4;
+    animation-duration: 2s;
+}
+@keyframes nivel3-4 {
+    0% {
+        opacity: 0%;
+        bottom: 100%
+    }
+    100% {
+        opacity: 100%;
+        bottom: 0%;
+    }
+}
+.donaciones__nivel3:hover {
+    transform: scale(1.03);
+    background-color: orange;
+}
+.donaciones__nivel4 {
+    grid-area: cred4;
+    border: 4px green solid;
+    border-radius: 20px;
+    height: 50%;
+    width: 90%;
+    position: relative;
+    background-color: rgb(158, 247, 140);
+    transition: all 1s;
+    animation-name: nivel3-4;
+    animation-duration: 2s;
+}
+.donaciones__nivel4:hover {
+    transform: scale(1.03);
+    background-color: orange;
+}
+
+
+.enlaces {
+    text-decoration: none;
+    color: black;
+}
+.recuadro {
+    margin: 5 px;
+    border: 2px yellow solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+.recuadro__imagen {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 2px green solid;
+    transition: all 2s;
+}
+.recuadro__imagen:hover {
+    transform: scale(1.2);
+}
+.recuadro__epigrafe {
+    align-self: center;
+    color: black;
+}
+.footer {
+    background-color: green;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.footer__marca {
+    height: 8vh;
+    width: 50px;
+}
+.footer__logo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.footer__proyecto {
+    font-size: 24px;
+    position: absolute;
+    left: 80px;
+}
+.listafooter {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+    width: 45%;
+    height: 100%;
+}
+.listafooter__items {
+    margin: 5px;
+}
+.iconos {
+    font-size: 50px;
+    border: solid green;
+    border-radius: 5px;
+    background-color: yellowgreen;
+    margin: 5px;
+    transition: all 1s;
+}
+.iconos:hover {
+    background-color: green;
+    color: yellow;
+}
+@media screen and (max-width: 1023px) {
+    /* vista de tablet no solicitada por consigna */
+    .header__proyecto {
+        font-size: 18px;
+    }
+    .nav__lista {
+        font-size: 10px;
+    }
+    .contenido__titulo {
+        font-size: 18px
+    }
+    .contenido__parrafo {
+        font-size: 11px;
+    }
+    .recuadro__epigrafe {
+        font-size: 11px;
+    }
+    .footer__proyecto {
+        font-size: 14px;
+    }
+    .iconos {
+        font-size: 35px;
+    }
+    .enviar {
+        width: 12%;
+        margin: 5px
+    }
+    .contenido__foto {
+        height: 200px;
+    }
+    .contenido__epigrafe {
+        font-size: 12px;
+    }
+    .donaciones__titulo {
+        border: solid green 2px;
+        font-size: 16px;
+        grid-area: titulo;
+        text-align: center;
+    }
+    .donaciones__lista {
+        border: green solid 2px;
+        grid-area: lista;
+        border-top: 0px;
+        display: grid;
+        list-style: none;
+        align-items: center;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "cred1 cred2"
+        "cred3 cred4";
+        justify-items: center;
+    }
+    .donaciones__nivel1 {
+        grid-area: cred1;
+        border: 4px green solid;
+        border-radius: 20px;
+        height: 70%;
+        width: 90%;
+        position: relative;
+        background-color: rgb(158, 247, 140);
+    }
+    .carnet {
+        height: 70px;
+        width: 70px;
+        border: yellow 3px solid;
+        border-radius: 16px;
+        object-fit: cover;
+        position: absolute;
+        top:5px;
+        margin-left: 4px;
+    }
+    .donaciones__descripcion {
+        font-size: 8px;
+        position: absolute;
+        left: 90px;
+        bottom: 40px;
+    }
+    .donaciones__enlace {
+        padding: 2px;
+        width: 85%;
+        border: green solid 2px;
+        border-radius: 5px;
+        font-size: 10px;
+        position: absolute;
+        margin: 4px;
+        top: 80px;
+        right: 10px;
+        background-color: yellow;
+        text-align: center;
+    }
+    .donaciones__nivel2 {
+        grid-area: cred2;
+        border: 4px green solid;
+        border-radius: 20px;
+        height: 70%;
+        width: 90%;
+        position: relative;
+        background-color: rgb(158, 247, 140);
+    }
+    .donaciones__nivel3 {
+        grid-area: cred3;
+        border: 4px green solid;
+        border-radius: 20px;
+        height: 70%;
+        width: 90%;
+        position: relative;
+        background-color: rgb(158, 247, 140);
+    }
+    .donaciones__nivel4 {
+        grid-area: cred4;
+        border: 4px green solid;
+        border-radius: 20px;
+        height: 70%;
+        width: 90%;
+        position: relative;
+        background-color: rgb(158, 247, 140);
+    }
+    .form {
+        gap: 0px;
+    }
+    .form__comentario {
+        font-size: 10px;
+        max-width: 97%;
+    }
+    .form__nombre {
+        font-size: 10px;
+        max-width: 97%;
+    }
+    .form__genero {
+        font-size: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 97%;
+    }
+    .labelGenero {
+        padding-left: 30%;
+    }
+    .form__comentario {
+        font-size: 10px;
+        max-width: 97%;
+    }
+    .form__correo {
+        font-size: 10px;
+        max-width: 97%;
+    }
+    .form__edad {
+        font-size: 10px;
+        max-width: 97%;
+    }
+    .form__nro {
+        font-size: 10px;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .header__proyecto {
+        display: none;
+    }
+    .header__menu {
+        display: flex;
+    }
+    .header__open {
+        display: block;
+        font-size: 32px;
+        color: yellow;
+        text-decoration: none;
+    }
+    .marco {
+        background-color: yellow;
+        height: 100%;
+        width: 20%
+    }
+    .nav {
+        display: flex;
+    }
+    #lateral {
+        display: block;
+        background-color: rgba(22, 129, 0, 0.8);
+        height: 100vh;
+        width: 80%;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: -100%;
+        transition: left 1s;
+    }
+    #lateral:target {
+        left: 0;
+    }
+    .nav__lista {
+        height: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 14px;
+        
+    }
+    .volver {
+        display: flex;
+        font-size: 20px;
+    }
+    .menu {
+        font-size: 50px;
+        display: flex;
+    }
+    .main {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "article";
+        height: 80vh;
+        width: 100%;
+    }
+    .main__article {
+        grid-area: article;
+    }
+    .section {
+        height: 100%;
+        width: 100%;
+        border: 3px yellow solid;
+    }
+    .contenido {
+        height: 100%;
+        width: 100%;
+        margin: 5 px;
+        border: 2px green solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .contenido__titulo {
+        border: 2px solid green;
+        margin: 5px;
+        padding: 5px;
+        font-size: 28px;
+        text-align: center;
+    }
+    .contenido__parrafo {
+        border: 2px solid green;
+        margin: 5px 5px 5px 5px;
+        padding: 5px;
+        font-size: 16px;
+        text-align: justify;
+    }
+    .contenido__foto {
+        border: 2px solid green;
+        margin: 5px;
+        height: 250px;
+        width: 400px;
+        align-self: center;
+        object-fit: cover;
+    }
+    .contenido__epigrafe {
+        align-self: center;
+        margin: 5px;
+    }
+    .main__aside {
+        display:none;
+    }
+    .contenido__titulo {
+        font-size: 14px;
+    }
+    .contenido__parrafo {
+        font-size: 10px;
+    }
+    .contenido__foto {
+        display: none;
+    }
+    .contenido__epigrafe{
+        display: none;
+    }
+    .donaciones-m {
+        height: 80%;
+        width: 98%;
+        border: solid green 2px;
+        display: grid;
+        grid-template-rows: 10% 90%;
+        grid-template-areas:
+        "titulo"
+        "lista";
+        margin: 3px;
+    }
+    .donaciones__titulo {
+        border: solid green 2px;
+        font-size: 9.5px;
+        grid-area: titulo;
+        text-align: center;
+    }
+    .donaciones__lista {
+        border: green solid 2px;
+        grid-area: lista;
+        border-top: 0px;
+        display: grid;
+        list-style: none;
+        align-items: center;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "cred1 cred2"
+        "cred3 cred4";
+        justify-items: center;
+    }
+    .enviar {
+        width: 18%;
+        font-size: 10px;
+        margin: 5px
+    }
+    .donaciones__nivel1 {
+        grid-area: cred1;
+        border: 4px green solid;
+        border-radius: 20px;
+        height: 90%;
+        width: 90%;
+        position: relative;
+        background-color: rgb(158, 247, 140);
+    }
+    .carnet {
+        height: 50px;
+        width: 50px;
+        border: yellow 3px solid;
+        border-radius: 16px;
+        object-fit: cover;
+        position: absolute;
+        top: 4px;
+        margin-left: 4px;
+    }
+    .donaciones__descripcion {
+        font-size: 50%;
+        position: absolute;
+        left: 60px;
+        bottom: 40px;
+    }
+    .donaciones__enlace {
+        padding: 2px;
+        height: 30%;
+        width: 85%;
+        border: green solid 2px;
+        border-radius: 5px;
+        font-size: 10px;
+        position: absolute;
+        margin: 4px;
+        top: 60%;
+        right: 5%;
+        background-color: yellow;
+        text-align: center;
+    }
+    .donaciones__nivel2 {
+        grid-area: cred2;
+        border: 4px green solid;
+        border-radius: 20px;
+        height: 90%;
+        width: 90%;
+        position: relative;
+        background-color: rgb(158, 247, 140);
+    }
+    .donaciones__nivel3 {
+        grid-area: cred3;
+        border: 4px green solid;
+        border-radius: 20px;
+        height: 90%;
+        width: 90%;
+        position: relative;
+        background-color: rgb(158, 247, 140);
+    }
+    .donaciones__nivel4 {
+        grid-area: cred4;
+        border: 4px green solid;
+        border-radius: 20px;
+        height: 90%;
+        width: 90%;
+        position: relative;
+        background-color: rgb(158, 247, 140);
+    }
+    .labelGenero {
+        padding-left: 25%;
+    }
+    .footer {
+        background-color: green;
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .footer__marca {
+        height: 8vh;
+        width: 50px;
+    }
+    .footer__logo {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .footer__proyecto {
+        display: none;
+    }
+    .listafooter {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: yellow;
+        width: 80%;
+        height: 100%;
+    }
+    .listafooter__items {
+        margin: 5px;
+    }
+    .iconos {
+        font-size: 30px;
+        border: solid green;
+        border-radius: 5px;
+        background-color: yellowgreen;
+    }
+}
